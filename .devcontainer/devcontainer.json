@@ -1,0 +1,16 @@
+// See https://containers.dev/implementors/json_reference/ for configuration reference
+{
+	"name": "HomeInterface (Node)",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"args": {
+			"VARIANT": "20.10-bookworm"
+		}
+	},
+"remoteUser": "node",
+"features": {
+	"ghcr.io/devcontainers/features/git:1": {},
+	"ghcr.io/devcontainers-contrib/features/pnpm:2": {},
+	"ghcr.io/prulloac/devcontainer-features/pre-commit:1": {}
+}
+}
