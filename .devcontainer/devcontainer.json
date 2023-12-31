@@ -2,15 +2,26 @@
 {
 	"name": "HomeInterface (Node)",
 	"build": {
-		"dockerfile": "Dockerfile",
-		"args": {
-			"VARIANT": "20.10-bookworm"
-		}
+		"dockerfile": "Dockerfile"
 	},
-"remoteUser": "node",
-"features": {
-	"ghcr.io/devcontainers/features/git:1": {},
-	"ghcr.io/devcontainers-contrib/features/pnpm:2": {},
-	"ghcr.io/prulloac/devcontainer-features/pre-commit:1": {}
-}
+	"remoteUser": "node",
+	"features": {
+		"ghcr.io/devcontainers/features/git:1": {},
+		"ghcr.io/devcontainers-contrib/features/pnpm:2": {},
+		"ghcr.io/prulloac/devcontainer-features/pre-commit:1": {},
+		"ghcr.io/devcontainers-community/npm-features/prettier:1": {}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"esbenp.prettier-vscode"
+			],
+			"settings": {
+				"editor": {
+					"formatOnSave": true,
+					"defaultFormatter": "esbenp.prettier-vscode"
+				}
+			}
+		}
+	}
 }
