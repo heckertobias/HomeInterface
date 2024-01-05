@@ -208,3 +208,6 @@ dist
 
 # Built Visual Studio Code Extensions
 *.vsix
+
+# pnpm store
+.pnpm-store

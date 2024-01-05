@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "ESNext",
+      "dom"
+    ],
+    "outDir": "dist",
+    "removeComments": true,
+    "target": "ESNext",
+    "module": "ESNext",
+    "jsx": "react-jsx",
+    // Module resolution
+    "esModuleInterop": true,
+    "moduleResolution": "Node",
+    "baseUrl": "src",
+    "paths": {
+      "@/*": [
+        "*"
+      ]
+    },
+    // Source Map
+    "sourceMap": true,
+    "sourceRoot": "/src",
+    // Strict Checks
+    "isolatedModules": false,
+    "strict": true /* Set to false if you do NOT want strict typechecking. You can also disable the strict typechecking for one line with @ts-expect-error comment. */,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "allowJs": false /* Allow javascript files to be compiled. Set allowJs and checkJs to true, if needed. */,
+    "checkJs": false,
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

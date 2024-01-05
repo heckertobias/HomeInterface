@@ -14,14 +14,22 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"esbenp.prettier-vscode"
+				"esbenp.prettier-vscode",
+				"bradlc.vscode-tailwindcss"
 			],
 			"settings": {
 				"editor": {
 					"formatOnSave": true,
-					"defaultFormatter": "esbenp.prettier-vscode"
+					"defaultFormatter": "esbenp.prettier-vscode",
+					"quickSuggestions": {
+						"strings": "on"
+					}
+				},
+				"files.associations": {
+					"*.css": "tailwindcss"
 				}
 			}
 		}
-	}
+	},
+	"postStartCommand": "pnpm install --frozen-lockfile"
 }
