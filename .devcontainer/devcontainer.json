@@ -8,8 +8,7 @@
 	"features": {
 		"ghcr.io/devcontainers/features/git:1": {},
 		"ghcr.io/devcontainers-contrib/features/pnpm:2": {},
-		"ghcr.io/prulloac/devcontainer-features/pre-commit:1": {},
-		"ghcr.io/devcontainers-community/npm-features/prettier:1": {}
+		"ghcr.io/prulloac/devcontainer-features/pre-commit:1": {}
 	},
 	"customizations": {
 		"vscode": {
@@ -21,6 +20,10 @@
 				"editor": {
 					"formatOnSave": true,
 					"defaultFormatter": "esbenp.prettier-vscode",
+					"tabWidth": 2,
+					"rulers": [
+						100
+					],
 					"quickSuggestions": {
 						"strings": "on"
 					}
@@ -28,7 +31,8 @@
 				"files.associations": {
 					"*.css": "tailwindcss"
 				}
-			}
+			},
+			"javascript.preferences.importModuleSpecifier": "non-relative"
 		}
 	},
 	"postStartCommand": "pnpm install --frozen-lockfile"
